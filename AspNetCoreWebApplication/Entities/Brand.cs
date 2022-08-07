@@ -12,7 +12,7 @@ namespace AspNetCoreWebApplication.Entities
         public string? Description { get; set; }
         [Display(Name ="Marka Logosu"), StringLength(50)]
         public string? Logo { get; set; }
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; } //Bunun altındakiler sonra eklendi
         public Brand()
         {
             Products = new List<Product>();
